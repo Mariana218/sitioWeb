@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOE! - Cuentos de Edgar Allan Poe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Candara:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Simulación de Berlin Sans FB */
+        .berlin-sans-fb { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    
+    <header class="top-bar-login">
+        <button class="login-icon-btn" aria-label="Iniciar Sesión">
+            <i class="fas fa-user-circle"></i>
+        </button>
+    </header>
+
+    <nav class="vertical-nav" id="verticalNav">
+        <div class="nav-logo-area">
+            <img class="logo" src="imagenes/logo.png" alt="APOE! Logo" class="nav-logo">
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-item active "><i class="fas fa-home"></i> INICIO</a>
+            <a href="#gato-negro" class="nav-item "><i class="fas fa-book-reader"></i> EL GATO NEGRO</a>
+            <a href="#barril-amontillado" class="nav-item "><i class="fas fa-book-reader"></i> EL BARRIL AMONTILLADO</a>
+            <a href="#corazon-delator" class="nav-item "><i class="fas fa-book-reader"></i> EL CORAZÓN DELATOR</a>
+            <a href="#pendulo-pozo" class="nav-item "><i class="fas fa-book-reader"></i> EL PÉNDULO Y EL POZO</a>
+        </div>
+        
+        <button class="close-menu" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
+    <section class="fondo">
+
+        <main class="main-content">
+            
+            <section class="combined-home-section" id="hero">
+                
+                <div class="hero-visual-part full-height">
+                    <div class="hero-overlay">
+                    <h1 class="hero-title berlin-sans-fb">APOE!</h1>
+                    <h2 class="hero-subtitle berlin-sans-fb">Reconecta con el Misterio y la Lectura.</h2>
+                    <p class="hero-description">Libro digital interactivo que ilustra y narra las obras de Edgar Allan Poe de una manera accesible, visual y emocionalmente atractiva.</p>
+                    <button class="cta-button primary-button large-button" onclick="document.getElementById('project-details-merged').scrollIntoView({ behavior: 'smooth' });">
+                        SABER MÁS DEL PROYECTO <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="project-details-merged" id="project-details-merged">
+                <h2 class="section-title">Proyecto APOE!</h2>
+                <div class="about-grid">
+                    <div class="about-card project-card">
+                        <h3 class="berlin-sans-fb">OBJETIVO CENTRAL</h3>
+                        <p>Reconectar con el placer de la lectura mediante una experiencia digital ilustrada, flexible y adaptada a los estilos de vida actuales, desarrollando habilidades cognitivas y emocionales a través de las obras de Poe.</p>
+                        <div class="libros"></div>
+                    </div>
+                    <div class="about-card creators-card">
+                        <h3 class="berlin-sans-fb">CREADORES DEL PROYECTO</h3>
+                        <div class="nombres">
+                            <p>Nicolás Atehortua</p>
+                            <p>Mariana Martínez<p>
+                        </div>
+                        <div class="creadores">
+                            <img class="avatar" src="./imagenes/Avatar.jpg" alt="">
+                            <img class="avatar" src="./imagenes/Avatar.ai.jpg" alt="">
+                        </div>
+                        <p class="small-text">SENA - Desarrollo Web (2025)</p>
+                    </div>
+                </div>
+                <p class="justification-text">"Buscamos crear una comunidad de 'cuervos lectores' para fomentar la conexión con la lectura de nuevo, dando honor a Poe."</p>
+                
+                <div class="pdf-links-area">
+                    <h3 class="documentos">Documentación del Proyecto</h3>
+                    <div class="pdf-links-grid">
+                        <a href="uploaded:ManualMarca-Apoe!.pdf" target="_blank" class="document-link pdf-button">
+                            <i class="fas fa-file-pdf"></i> Manual de Marca
+                        </a>
+                        <a href="uploaded:Pichbook-Apoe!.pdf" target="_blank" class="document-link pdf-button">
+                            <i class="fas fa-file-pdf"></i> Pitchbook del Proyecto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+        
+        <section class="cuento-section gato-negro-bg" id="gato-negro">
+            
+            <div class="cuento-header">
+                <div class="cuento-visual-portada">
+                    </div>
+                <div class="cuento-details">
+                    <h2 class="cuento-title berlin-sans-fb">El Gato Negro</h2>
+                    <p class="cuento-tagline">El descenso a la locura, la culpa y la perversidad de un hombre.</p>
+                    <div class="cuento-actions">
+                        <button class="cta-cuento primary-button large-button" onclick="window.location.href='cuento_lectura.html?cuento=gato-negro'">
+                            <i class="fas fa-book-open"></i> INICIAR LECTURA
+                        </button>
+                        <button class="cta-favorite secondary-button">
+                            <i class="fas fa-heart"></i> AGREGAR A FAVORITOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuento-characters">
+                <div class="character-carousel-container">
+                    <h3 class="characters-title berlin-sans-fb">PERSONAJES</h3>
+                    
+                    <div class="character-card active">
+                        <h4 class="character-name berlin-sans-fb">FRANK</h4>
+                        <div class="character-traits">
+                            <p><strong>Habilidad:</strong> Sensibilidad inicial y amor por los animales.</p>
+                            <img class="gato" src="./imagenes/frank.png" alt="">
+                            <p><strong>Defecto:</strong> Alcoholismo, perversidad e irracionalidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="character-card next">
+                        <h4 class="character-name berlin-sans-fb">GATO NEGRO</h4>
+                        <div class="character-traits">
+                            <p><strong>Habilidad:</strong> Gran afecto y lealtad.</p>
+                            <img class="gato" src="./imagenes/gato.png" alt="">
+                            <p><strong>Defecto:</strong> Es un detonante de la locura del narrador.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-nav next"><i class="fas fa-chevron-right"></i></button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cuento-section barril-amontillado-bg" id="barril-amontillado">
+            <div class="cuento-header">
+                <div class="cuento-visual-portada"></div>
+                <div class="cuento-details">
+                    <h2 class="cuento-title berlin-sans-fb">El Barril Amontillado</h2>
+                    <p class="cuento-tagline">Venganza fría y metódica, y entierro en vida durante el carnaval.</p>
+                    <div class="cuento-actions">
+                        <button class="cta-cuento primary-button large-button" onclick="window.location.href='cuento_lectura.html?cuento=barril-amontillado'">
+                            <i class="fas fa-book-open"></i> INICIAR LECTURA
+                        </button>
+                        <button class="cta-favorite secondary-button">
+                            <i class="fas fa-heart"></i> AGREGAR A FAVORITOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuento-characters">
+                <div class="character-carousel-container">
+                    <h3 class="characters-title berlin-sans-fb">PERSONAJES</h3>
+                    <div class="character-card active">
+                        <h4 class="character-name berlin-sans-fb">MONTRESOR</h4>
+                        <p>La venganza es su motor.</p>
+                        <img class="gato" src="./imagenes/montresor.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cuento-section corazon-delator-bg" id="corazon-delator">
+            <div class="cuento-header">
+                <div class="cuento-visual-portada"></div>
+                <div class="cuento-details">
+                    <h2 class="cuento-title berlin-sans-fb">El Corazón Delator</h2>
+                    <p class="cuento-tagline">El ojo de buitre, la obsesión y el latido incesante de la culpa.</p>
+                    <div class="cuento-actions">
+                        <button class="cta-cuento primary-button large-button" onclick="window.location.href='cuento_lectura.html?cuento=corazon-delator'">
+                            <i class="fas fa-book-open"></i> INICIAR LECTURA
+                        </button>
+                        <button class="cta-favorite secondary-button">
+                            <i class="fas fa-heart"></i> AGREGAR A FAVORITOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuento-characters">
+                <div class="character-carousel-container">
+                    <h3 class="characters-title berlin-sans-fb">PERSONAJES</h3>
+                    <div class="character-card active">
+                        <h4 class="character-name berlin-sans-fb">EL ASESINO</h4>
+                        <p>La locura disfrazada de razón.</p>
+                        <img class="gato" src="./imagenes/asesino.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cuento-section pendulo-pozo-bg" id="pendulo-pozo">
+            <div class="cuento-header">
+                <div class="cuento-visual-portada"></div>
+                <div class="cuento-details">
+                    <h2 class="cuento-title berlin-sans-fb">El Péndulo y el Pozo</h2>
+                    <p class="cuento-tagline">El horror psicológico de la Inquisición, entre la navaja que cae y el abismo.</p>
+                    <div class="cuento-actions">
+                        <button class="cta-cuento primary-button large-button" onclick="window.location.href='cuento_lectura.html?cuento=pendulo-pozo'">
+                            <i class="fas fa-book-open"></i> INICIAR LECTURA
+                        </button>
+                        <button class="cta-favorite secondary-button">
+                            <i class="fas fa-heart"></i> AGREGAR A FAVORITOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuento-characters">
+                <div class="character-carousel-container">
+                    <h3 class="characters-title berlin-sans-fb">PERSONAJES</h3>
+                    <div class="character-card active">
+                        <h4 class="character-name berlin-sans-fb">EL PRISIONERO</h4>
+                        <p>Lucha por la supervivencia mental.</p>
+                        <img class="gato" src="./imagenes/prisionero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p id="piepag">&copy; 2025 APOE! | Proyecto de Desarrollo Web SENA.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

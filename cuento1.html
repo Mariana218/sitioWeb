@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOE! - Cuento en Curso</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="reading-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Candara:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Simulación de Berlin Sans FB */
+        .berlin-sans-fb { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <div class="reading-app-view">
+        
+        <header class="app-header-reading">
+            <a href="index.html" class="back-home-btn" aria-label="Volver al inicio"><i class="fas fa-chevron-left"></i></a>
+            <img src="logo.png-bc55e5b3-9974-4c85-9c58-87e1a48511e1" alt="APOE! Logo" class="app-logo">
+            <button class="options-btn"><i class="fas fa-ellipsis-v"></i></button>
+        </header>
+
+        <main class="story-main-content">
+
+            <section class="content-scene-area">
+                <div class="media-container">
+                    <button class="menu-dot top-right" aria-label="Opciones de Escena"></button>
+                    <div class="illustration-placeholder berlin-sans-fb">
+                        ILUSTRACIÓN AUDIOVISUAL <br>(Escena 01)
+                    </div>
+                </div>
+
+                <div class="info-controls">
+                    <div class="text-area">
+                        <h1 class="scene-title berlin-sans-fb">El Gato Negro: Escena 01</h1>
+                        <p class="storyline">Storyline / Narración Auditiva Activa</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="primary-button small-button berlin-sans-fb">REANUDAR</button> 
+                        <button class="favorite-button"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+
+                <div class="nav-and-carrusel-area">
+                    <div class="pagination-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="nav-controls">
+                        <button class="control-btn"><i class="fas fa-cog"></i></button>
+                        <button class="arrow-btn prev-scene"><i class="fas fa-chevron-left"></i></button>
+                        <button class="arrow-btn next-scene"><i class="fas fa-chevron-right"></i></button>
+                        <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark-content-block">
+                <div class="block-header">
+                    <h3 class="berlin-sans-fb">Personajes y Características</h3>
+                    <div class="block-dots-pagination">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="list-item-area candara-font">
+                    <div class="list-item">
+                        <div class="list-dot"></div>
+                        <p class="list-line">Poe: Narrador con gran sensibilidad y amor por los animales.</p>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-dot"></div>
+                        <p class="list-line">Plutón: El primer gato negro, símbolo de la fidelidad inicial.</p>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-dot"></div>
+                        <p class="list-line">La Perversidad: Sentimiento inexplicable que conduce al mal.</p>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-dot"></div>
+                        <p class="list-line">Storyline: El narrador se auto-destruye por el alcohol y la culpa.</p>
+                    </div>
+                </div>
+
+                <div class="block-bottom-pagination">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+
+            <section class="bottom-area-forum">
+                <div class="bottom-card-placeholder">
+                    <div class="card-screen berlin-sans-fb">FORO DE COMENTARIOS</div>
+                    <button class="menu-dot top-right" aria-label="Menú Foro"></button>
+                    <div class="card-controls">
+                        <div class="control-line">Comentar o ver interacciones</div>
+                        <div class="control-dot"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             // Puedes agregar aquí la lógica para cargar el cuento específico 
+             // usando el parámetro URL (cuento=gato-negro)
+             const urlParams = new URLSearchParams(window.location.search);
+             const cuento = urlParams.get('cuento') || 'default';
+             console.log(`Cuento cargado: ${cuento}`);
+        });
+    </script>
+</body>
+</html>
