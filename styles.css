@@ -275,14 +275,14 @@ a { text-decoration: none; color: inherit; }
     justify-content: center;
     gap: 4rem;
 }
-.libros{
+/* .libros{
     background-image: url("./imagenes/libros.png");
     width: 270px;
     height: 20vh;
     margin-top: 20px;
     background-position: center;
     position: absolute;
-}
+} */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
