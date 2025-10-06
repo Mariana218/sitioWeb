@@ -277,7 +277,7 @@ a { text-decoration: none; color: inherit; }
 }
 .libros{
     background-image: url("./imagenes/libros.png");
-    width: 370px;
+    width: 270px;
     height: 20vh;
     margin-top: 20px;
     background-position: center;
